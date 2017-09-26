@@ -1,0 +1,194 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  background-color: AquaMarine;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.company h1 {
+  font-size: 2.2rem;
+  padding: 1rem;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25rem;
+}
+
+.health {
+  display: none;
+}
+
+.header a {
+  color: black;
+  text-decoration: none;
+}
+
+.main-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  height: 25rem;
+  background-image: url('../images/watermelon-juice.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+.banner-heading h1 {
+  margin-top: 5rem;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.banner-heading h6 {
+  margin-top: 3rem;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+#menu {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-items {
+  width: 30%;
+  height: 17rem;
+}
+
+.menu-items h1 {
+  font-size: 1.5rem;
+  background-color: AquaMarine;
+  opacity: 0.7;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.juices {
+  background-image: url('../images/papaya-juice.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.smoothies {
+  background-image: url('../images/watermelon-mint-juice.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.smoothie-bowls {
+  background-image: url('../images/green-smoothie-bowl.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 10rem;
+  background-color: AquaMarine;
+}
+
+footer span {
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  #menu {
+    flex-wrap: wrap;
+    height: 40rem;
+  }
+
+  .menu-items {
+    width: 47%;
+    height: 17rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #menu {
+    flex-direction: column;
+    height: 60rem;
+  }
+
+  .menu-items {
+    width: 90%;
+  }
+
+  .company h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-heading h1 {
+    font-size: 3rem;
+  }
+
+  .banner-heading h6 {
+    font-size: 1.2rem;
+  }
+
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nutrition {
+    display: none;
+  }
+
+  .health {
+    display: list-item;
+  }
+}
+
+@media only screen and (min-width: 471px)
+ and (max-width: 1024px) {
+   .header ul {
+     flex-direction: column;
+     align-items: center;
+     width: auto;
+   }
+
+   .nutrition {
+     display: none;
+   }
+
+   .health {
+     display: list-item;
+   }
+ }
